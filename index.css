@@ -1,0 +1,8 @@
+* {
+	font-family: Microsoft YaHei, sans-serif;
+}
+
+li > a {
+	color: #000;
+	text-decoration: none;
+}
