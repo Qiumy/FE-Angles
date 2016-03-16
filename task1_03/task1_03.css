@@ -6,10 +6,14 @@ figure
   padding: 0;
 }
 
-body {
+.all {
+	margin: 20px;
+	padding: 20px;
 	min-width: 600px;
 	background-color: #EEE;
 	font-family: "微软雅黑";
+	border: 1px solid #999;
+	position: relative;
 }
 
 .left{
@@ -28,10 +32,10 @@ body {
 }
 
 .main{
-	height: 600px;
+	height: 400px;
 	background-color: #FFF;
 	border: 1px solid #999;
-	margin: 20px 160px 0 240px;
+	margin: 0 140px 0 220px;
 	min-width: 200px;
 	padding: 20px;
 	
@@ -61,3 +65,4 @@ figure{
 .right img{
 	width: 80%;
 }
+
