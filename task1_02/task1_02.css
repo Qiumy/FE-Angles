@@ -1,97 +1,165 @@
-*{
-	font-family: Microsoft YaHei, sans-serif;
-}
 
 body{
 	background-color: #ddd;
 }
-
-#header {
+/*header*/
+.header {
 	background-color: #333;
 	width: 100%;
-	height:50px;
+}
+
+.logo{
+	display: inline-block;
+	float: left;
+	padding-left: 30px;
 }
 
 nav {
-	padding: 0px 30px 0px 30px;
-}
-
-nav >img{
-	float: left;
-}
-
-nav > ul > li{
+	display: block;
 	float: right;
-	margin:10px 15px 10px 15px;
+	padding-right: 30px; 
 }
 
-nav > ul > li > a{
+nav li{
+	float: left;
+	margin:0px 15px 0px 15px;
+	line-height: 60px;
+}
+
+
+nav a{
 	color: #fff;
 	text-decoration: none;
 }
 
+nav a:hover{
+	color:#00AAFF;
+}
+
+/*main-page*/
 #main-pages{
 	padding: 0px 30px 0px 30px;
 }
 
 article {
-	background-color: #fff;
-	padding: 20px 15px 15px 15px;
-	margin: 20px auto;
-	box-shadow: 4px 4px 10px #ccc;
+	margin: 20px 25px;
+	padding: 20px;
+	background: #FFF;
+	box-shadow: 2px 2px 2px #848484;	
 }
 
-article > ul {
+article h2{
+	line-height: 50px;
+}
+
+article h3{
+	line-height: 30px;
+	color: #484848;
+}
+
+article h4{
+	font-weight: normal;
+	line-height: 30px;
+	color:#99ABAB;
+}
+
+article p{
+	text-indent: 2em;
+	line-height: 30px;
+}
+
+article ul > li{
 	list-style: none;
+	text-indent: 2em;
+	line-height: 30px;
 }
 
-.image{
-	width: 300px;
-	height: 300px;
-	border: 1px solid #eee;
-	padding: 10px;
-}
-
-.image > h4{
+article figure{
+	display: block;
+	width: 250px;
+	margin: 10px 40px;
 	text-align: center;
+	border: 1px solid #DEDEDE;
+	padding: 10px 0;
 }
 
-#table{
+article figure>img{
+	width: 80%;
+}
+
+article ol>li{
+	margin-left: 30px;
+	line-height: 30px;
+}
+
+#last p{
+	text-indent: 0em;
+}
+
+#last table{
 	width:100%;	
+	background: #CCC;
 }
 
-#table > tr,th,td{
-	border:1px solid #000;
-}
-
-#table > thead{
-	color:white;
+#last thead{
+	background: #333;
+	color: #FFF;
 	text-align: left;
-	background-color: #000;
 }
 
-#sidebar{
-	background-color: #fff;
-	padding: 20px 15px 15px 15px;
-	margin: 20px auto;
-	box-shadow: 4px 4px 10px #ccc;
+#last tbody{
+	background: #FFF;
 }
 
-#registerform{
-	text-align: center;
+#last tfoot{
+	background: #CCC;
 }
 
-#regSub{
-	background-color: blue;
-	color: #fff;
+/*aside*/
+
+aside{
+	margin: 20px 25px;
+	background: #FFF;
+	box-shadow: 2px 2px 2px #848484;
+	padding: 20px;
+}
+
+aside h2{
+	border-left: 2px solid #CCC;
+	text-indent: 1em;
+	color: #000;
+}
+
+aside table{
 	width: 100%;
-	font-size: 1.2em;
-	border-radius:10px;
+}
+aside table td{
+	line-height: 30px;
+}
+aside textarea{
+	width: 80%;
+	height: 100px;
+}
+
+.text-right{
+	text-align: right;
+	padding-right: 1em;
+}
+
+#submit{
+	font-weight: bold;
+	font-size: 1.5em;
+	width: 100%;
+	line-height: 1.8em;
+	background: #3355DD;
+	color: #FFF;
+	border-radius: 10px;
+	border: 0;
 }
 
 footer{
 	text-align: center;
-	padding: 1px 0px 1px 0px;
+	line-height: 70px;
 	background-color: #333;
 	color: #fff;
 }
