@@ -2,7 +2,84 @@
 	font-family: Microsoft YaHei, sans-serif;
 }
 
+.all {
+	margin: 20px;
+	padding: 20px;
+	min-width: 600px;
+	background-color: #EEE;
+	font-family: "微软雅黑";
+	border: 1px solid #999;
+}
+
+.left{
+	width: 200px;
+	background-color: #FFF;
+	text-align: center;
+	border: 1px solid #999;
+	padding: 20px;
+	float:left;
+	-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.left img{
+	width: 100%;
+}
+
+.left li{
+	list-style: none;
+	padding-top: 5px;
+}
+
+.main{
+/*	height: 400px;*/
+	background-color: #FFF;
+	border: 1px solid #999;
+	margin-left: 220px;
+	margin-right: 140px;
+	min-width: 200px;
+	padding: 20px;
+	
+}
+
+.main li{
+	list-style: none;
+	line-height: 2.5em;
+}
+
+.right{
+	width:120px;
+	background-color: #FFF;
+	border: 1px solid #999;
+	float: right;
+	padding: 5px;
+	-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+figure{
+	margin:5px;
+	padding: 5px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.right img{
+	width: 100%;
+}
+
+.clearfix{
+	overflow: auto;
+	zoom:1;
+}
+
 li > a {
 	color: #000;
 	text-decoration: none;
+}
+
+li a:hover {
+	color: #66DDFF;
 }
