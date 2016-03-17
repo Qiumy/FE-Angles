@@ -1,0 +1,68 @@
+body,
+div,
+figure
+{
+  margin: 0;
+  padding: 0;
+}
+
+.all {
+	margin: 20px;
+	padding: 20px;
+	min-width: 600px;
+	background-color: #EEE;
+	font-family: "微软雅黑";
+	border: 1px solid #999;
+}
+
+.left{
+	width: 200px;
+	background-color: #FFF;
+	text-align: center;
+	border: 1px solid #999;
+	padding-bottom: 10px;
+	float:left;
+}
+
+.left img{
+	width: 80%;
+}
+
+.main{
+/*	height: 400px;*/
+	background-color: #FFF;
+	border: 1px solid #999;
+	margin-left: 220px;
+	margin-right: 140px;
+	min-width: 200px;
+	padding: 20px;
+	
+}
+
+.main li{
+	list-style: none;
+	line-height: 2.5em;
+}
+
+.right{
+	width:120px;
+	background-color: #FFF;
+	border: 1px solid #999;
+	float: right;
+}
+
+figure{
+	margin:5px;
+	padding: 5px;
+	text-align: center;
+	border: 1px solid #999;
+}
+
+.right img{
+	width: 80%;
+}
+
+.clearfix{
+	overflow: auto;
+	zoom:1;
+}
