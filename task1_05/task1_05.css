@@ -1,0 +1,171 @@
+
+body{
+	background-color: #ddd;
+	min-width: 850px;
+}
+/*header*/
+.header {
+	background-color: #333;
+	width: 100%;
+}
+
+.logo{
+	display: inline-block;
+	float: left;
+	padding-left: 30px;
+}
+
+nav {
+	display: block;
+	float: right;
+	padding-right: 30px; 
+}
+
+nav li{
+	float: left;
+	margin:0px 15px 0px 15px;
+	line-height: 60px;
+}
+
+
+nav a{
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color:#00AAFF;
+}
+
+/*main-page*/
+#main-page{
+	padding: 0px 30px 0px 30px;
+	margin-right: 420px;
+	min-width: 400px;
+}
+
+article {
+	margin: 20px 25px;
+	padding: 20px;
+	background: #FFF;
+	box-shadow: 2px 2px 2px #848484;	
+}
+
+article h2{
+	line-height: 50px;
+}
+
+article h3{
+	line-height: 30px;
+	color: #484848;
+}
+
+article h4{
+	font-weight: normal;
+	line-height: 30px;
+	color:#99ABAB;
+}
+
+article p{
+	text-indent: 2em;
+	line-height: 30px;
+}
+
+article ul > li{
+	list-style: none;
+	text-indent: 2em;
+	line-height: 30px;
+}
+
+article figure{
+	display: inline-block;
+	width: 250px;
+	margin: 10px 40px;
+	text-align: center;
+	border: 1px solid #DEDEDE;
+	padding: 10px 0;
+}
+
+article figure>img{
+	width: 80%;
+}
+
+article ol>li{
+	margin-left: 30px;
+	line-height: 30px;
+}
+
+#last p{
+	text-indent: 0em;
+}
+
+#last table{
+	width:100%;	
+	background: #CCC;
+}
+
+#last thead{
+	background: #333;
+	color: #FFF;
+	text-align: left;
+}
+
+#last tbody{
+	background: #FFF;
+}
+
+#last tfoot{
+	background: #CCC;
+}
+
+/*aside*/
+
+#aside{
+	width:375px;
+	margin: 20px 25px;
+	background: #FFF;
+	box-shadow: 2px 2px 2px #848484;
+	padding: 20px;
+	float: right;
+}
+
+#aside h2{
+	border-left: 2px solid #CCC;
+	text-indent: 1em;
+	color: #000;
+}
+
+#aside table{
+	width: 100%;
+}
+#aside table td{
+	line-height: 30px;
+}
+#aside textarea{
+	width: 80%;
+	height: 100px;
+}
+
+.text-right{
+	text-align: right;
+	padding-right: 1em;
+}
+
+#submit{
+	font-weight: bold;
+	font-size: 1.5em;
+	width: 100%;
+	line-height: 1.8em;
+	background: #3355DD;
+	color: #FFF;
+	border-radius: 10px;
+	border: 0;
+}
+
+footer{
+	text-align: center;
+	line-height: 70px;
+	background-color: #333;
+	color: #fff;
+}
+

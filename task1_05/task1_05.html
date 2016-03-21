@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<title>task1_05</title>
+		<link rel="stylesheet" type="text/css" href="../task1_02/base.css">
+		<link rel="stylesheet" type="text/css" href="./task1_05.css">
+	</head>
+	<body>
+		<header class="clearfix header">
+			<img src="../images/logo.png" alt="logo" class="logo">
+			<nav>
+				<ul>
+					<li><a href="#">导航链接一</a></li>
+					<li><a href="#">导航链接二</a></li>
+					<li><a href="#">导航链接三</a></li>
+					<li><a href="#">导航链接四</a></li>
+				</ul>
+			</nav>
+		</header>
+		<aside id="aside">
+			<header>
+				<h2>这是侧栏的标题</h2>
+			</header>
+			<form>
+				<table>
+					<tr>
+						<td class="text-right">
+							<label for="email">请输入邮箱地址</label>
+						</td>
+						<td>
+							<input type="email" id="email" name="email" placeholder="这是一个文本输入框" />
+						</td>
+					</tr>
+					<tr>
+						<td class="text-right"></td>
+						<td>邮箱地址请按格式输入</td>
+					</tr>
+					<tr>
+						<td class="text-right">
+							<label for="psw">请输入密码</label>
+						</td>
+						<td>
+							<input type="password" minlength="6" maxlength="16" id="psw" name="psw" placeholder="这是一个文本输入框" value="123456" />
+						</td>
+					</tr>
+					<tr>
+						<td class="text-right">
+							<label for="repsw">请重复输入密码</label>
+						</td>
+						<td>
+							<input type="password" minlength="6" maxlength="16" id="repsw" name="repsw" placeholder="这是一个文本输入框" value="123456"/>
+						</td>
+					</tr>
+					<tr>
+						<td class="text-right"></td>
+						<td>密码请为6-16位英文数字</td>
+					</tr>
+					<tr>
+						<td class="text-right">性别</td>
+						<td>
+							<label for="male">男</label><input type="radio" id="male" name="sex" value="male" checked/>
+							<label for="female">女</label><input type="radio" id="female" name="sex" value="female"/>
+						</td>
+					</tr>
+					<tr>
+						<td class="text-right">
+							<label for="cities">城市</label>
+						</td>
+						<td>
+							<select id="cities" name="cities">
+								<option value="beijing">北京</option>
+								<option value="shanghai">上海</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="text-right">爱好</td>
+						<td>
+							<label for="sport">运动</label><input type="checkbox" name="habit" value="sport" id="sport"/>
+							<label for="art">艺术</label><input type="checkbox" name="habit" value="art" id="art"/>
+							<label for="science">科学</label><input type="checkbox" name="habit" value="science" id="science"/>
+						</td>
+					</tr>
+					<tr>
+						<td class="text-right">
+							<label for="description">个人描述</label>
+						</td>
+						<td>
+							<textarea id="description" placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
+						</td>
+					</tr>
+				</table>
+				<input type="submit" value="确认提交" id="submit">
+			</form>
+		</aside>
+		<div id="main-page">
+			<article>
+				<header>
+					<h2>文章一级标题</h2>
+					<h3>文章二级标题</h3>
+					<h4>文章作者&nbsp;文章发表时间</h4>	
+				</header>
+				<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长	的段落</p>
+				<img src="../images/leaves.jpg" alt="这里有张漂亮的图片"/>
+				<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com" target="_blank">这里有一个链接点击后打开新窗口链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落</p>
+			</article>
+			<article>
+				<header>
+					<h2>另一篇文章一级标题</h2>
+					<h3>文章二级标题</h3>
+					<h4>文章作者&nbsp;文章发表时间</h4>				
+				</header>
+				<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，</p>
+				<img src="../images/leaves.jpg">
+				<ul>
+					<li>列表项目一</li>
+					<li>列表项目二</li>
+					<li>列表项目三</li>
+				</ul>
+			</article>
+			<article>
+				<header>
+					<h2>图片</h2>
+				</header>
+				<figure>
+					<figcaption>好看的图片</figcaption>
+					<img src="../images/leaves.jpg" alt="这里有张漂亮的图片"/>
+				</figure>
+				<figure>
+					<figcaption>好看的图片</figcaption>
+					<img src="../images/leaves.jpg" alt="这里有张漂亮的图片"/>
+				</figure>
+				<figure>
+					<figcaption>好看的图片</figcaption>
+					<img src="../images/leaves.jpg" alt="这里有张漂亮的图片"/>
+				</figure>
+				<figure>
+					<figcaption>好看的图片</figcaption>
+					<img src="../images/leaves.jpg" alt="这里有张漂亮的图片"/>
+				</figure>
+				<figure>
+					<figcaption>好看的图片</figcaption>
+					<img src="../images/leaves.jpg" alt="这里有张漂亮的图片"/>
+				</figure>
+				<figure>
+					<figcaption>好看的图片</figcaption>
+					<img src="../images/leaves.jpg" alt="这里有张漂亮的图片"/>
+				</figure>
+				<figure>
+					<figcaption>好看的图片</figcaption>
+					<img src="../images/leaves.jpg" alt="这里有张漂亮的图片"/>
+				</figure>
+				<figure>
+					<figcaption>好看的图片</figcaption>
+					<img src="../images/leaves.jpg" alt="这里有张漂亮的图片"/>
+				</figure>
+				<figure>
+					<figcaption>好看的图片</figcaption>
+					<img src="../images/leaves.jpg" alt="这里有张漂亮的图片"/>
+				</figure>
+				<figure>
+					<figcaption>好看的图片</figcaption>
+					<img src="../images/leaves.jpg" alt="这里有张漂亮的图片"/>
+				</figure>
+			</article>
+			<article id="last">
+				<header>
+					<h2>最后一篇文章一级标题</h2>
+					<h3>文章二级标题</h3>
+					<h4>文章作者&nbsp;文章发表时间</h4>
+				</header>
+				<ol>
+					<li>排名1</li>
+					<li>排名2</li>
+					<li>排名3</li>
+				</ol>
+				<p>下面是一个表格，给表格加了一个border="1"好让你看出是一个表格</p>
+				<table>
+					<thead>
+						<th>表头</th>
+						<th>表头</th>
+						<th>表头</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>表格内容单元</td>
+							<td>表格内容单元</td>
+							<td>操作</td>
+						</tr>
+						<tr>
+							<td>表格内容单元</td>
+							<td>表格内容单元</td>
+							<td>操作</td>
+						</tr>
+						<tr>
+							<td>表格内容单元</td>
+							<td>表格内容单元</td>
+							<td>操作</td>
+						</tr>
+						<tr>
+							<td>表格内容单元</td>
+							<td>表格内容单元</td>
+							<td>操作</td>
+						</tr>
+					</tbody>
+					
+					<tfoot>
+						<tr>
+							<td>总结</td>
+							<td colspan="2">1000</td>
+						</tr>
+					</tfoot>
+				</table>
+			</article>
+		</div>
+		
+	</body>
+	<footer>
+		<p>版权所有&copy;EF-Angles</p>
+	</footer>
+</html>
