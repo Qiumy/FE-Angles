@@ -9,56 +9,61 @@
 <body>
 	<div class="container">
 		<header>
-			<div class="logo">新世界</div>
+			<div class="logo">
+				<img src="./images/header1.png" alt="logo">
+				<span>新世界</span>
+			</div>
 
 			<nav>
 				<ul>
-					<li><a href="#" title="首页"></a></li>
-					<li><a href="#" title="最新活动"></a></li>
-					<li><a href="#" title="项目介绍"></a></li>
-					<li><a href="#" title="爱心社区"></a></li>
-					<li><a href="#" title="关于我们"></a></li>
+					<li class="active item"><a href="#" title="首页" >首页</a></li>
+					<li class="item"><a href="#" title="最新活动">最新活动</a></li>
+					<li class="item"><a href="#" title="项目介绍">项目介绍</a></li>
+					<li class="item"><a href="#" title="爱心社区" >爱心社区</a></li>
+					<li class="item"><a href="#" title="关于我们" >关于我们</a></li>
+					<li><a href="#" title="登录" class="loginBtn"><img src="./images/login.png" alt="login">登录</a></li>
 				</ul>
 			</nav>
-			<div class="loginBtn">
-				登录
-			</div>
 		</header><!-- /header -->
 
 		<section class="part1">
-			<h1 class="hpart1">The time of life</h1>
-			<p class="ppart1">新时代，年轻的人们让我们在一起</p>
+		<div class="covered1"></div>
+			<h1>The time of life</h1>
+			<p>新时代，年轻的人们让我们在一起<br>体验新生活，享受新生活</p>
 			<button class="btnpart1">开始体验</button>
+			
 		</section>
+
 
 		<section class="part2">
 			<div class="wrap">
-				<img src="" alt="img1">
-				<p>打造全新世界观，让你更加爱你的生活</p>
+				<img src="./images/part2_1.png" alt="img1">
+				<p>打造全新世界观，让你更<br>加爱你的生活</p>
 			</div>
 			<div class="wrap">
-				<img src="" alt="img2">
-				<p>丰富多彩的工艺活动，发挥新世界的主人公意识</p>
+				<img src="./images/part2_2.png" alt="img2">
+				<p>丰富多彩的工艺活动，发<br>挥新世界的主人公意识</p>
 			</div>
 			<div class="wrap">
-				<img src="" alt="img3">
-				<p>时尚的新理念，超前体验未知生活</p>
+				<img src="./images/part2_3.png" alt="img3">
+				<p>时尚的新理念，超前体验<br>未知的生活</p>
 			</div>
 			<div class="wrap">
-				<img src="" alt="img4">
-				<p class="four">完善的培养制度，培养你的全新世界观</p>
+				<img src="./images/part2_4.png" alt="img4">
+				<p class="four">完善的培养制度，培养你<br>的全新世界观</p>
 			</div>
 		</section>
 
 		<section class="part3">
-			<img src="" alt="part">
-			<p>关于新世界，你不知道的还有什么</p>
+			<img src="./images/part3.png" alt="part">
+			<p>关于新世界，你不知道的还有什么?</p>
 		</section>
-
+		
 		<section class="part4">
+		
 			<h1>查找新世界城市活动信息</h1>
 			<p>每个城市都有不同的活动信息，请自助查询你所需要了解的城市</p>
-			<select class="country">
+			<select class="country" name="country">
 				<option value="China">中国</option>
 				<option value="other">其他</option>
 			</select>
@@ -71,7 +76,7 @@
 				<option value="liaoning">辽宁省</option>
 			</select>
 			<select>
-				<option value=""></option>}
+				<option value="">none</option>}
 			</select>
 			<button class="search">搜索</button>
 		</section>
