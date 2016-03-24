@@ -2,7 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: "微软雅黑";
+	font-family: "microsoft YaHei";
 }
 
 html body{
@@ -214,6 +214,424 @@ nav .active{
 	font-size: 14px;
 	background-color: #e74f4d;
 }
+
+.part5{
+	height:605px;
+	padding: 100px 90px 115px 150px;
+	background: #f7f7f7;
+	text-align: center;
+}
+
+.part5 figure{
+	float: left;
+	margin-right: 40px;
+}
+
+.part5 figure img{
+	width:220px;
+	height: 335px;
+	padding: 15px 10px;
+	background: #ffffff;
+}
+
+.part5 .shanghai{
+	font-size: 20px;
+	letter-spacing: 1.4em;
+}
+
+
+.part5 h2{
+	font-size: 16px;
+	font-weight: normal;
+	padding-bottom: 8px;
+}
+
+.part5 p{
+	color: #767777;
+	font-size: 12px;
+	padding-bottom: 5px;
+}
+
+.part6{
+	height: 570px;
+}
+
+.part6:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.lpart6{
+	float: left;
+	width: 850px;
+	height: 570px;
+	background: url('./images/part6.png');
+	text-align: center;
+	color: #ffffff;
+	position: relative;
+}
+
+.lpart6 h1{
+	margin-top: 130px;
+	font-size: 50px;
+	font-weight: normal;
+}
+
+.lpart6 h2{
+	font-size: 140px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.lpart6 span{
+	font-size: 22px;
+	font-weight: normal;
+	display: block;
+}
+
+.lpart6 time{
+	margin-top: 15px;
+	font-size: 22px;
+	display: block;
+}
+
+.lpart6 .tri{
+	width: 24px;
+    height: 29px;
+    background: url('./images/part6_1.png') no-repeat;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 268px;
+    overflow: hidden;
+}
+
+.rpart6{
+	width: 430px;
+	float: left;
+	padding: 165px 70px 0 70px;
+	text-align: center;
+}
+
+.rpart6 h1{
+	font-size: 22px;
+	font-weight: normal;
+}
+
+.rpart6 h1 span{
+	color: #e7504d;
+}
+
+.rpart6 p{
+	padding-top: 30px;
+	color: #aaaaaa;
+	font-size: 12px;
+	line-height: 35px;
+}
+
+.rpart6 button{
+	margin-top: 45px;
+	width: 105px;
+	border: solid 1px #e74f4d;
+	background-color: #ffffff;
+	color: #e74f4d;
+	font-size: 12px;
+	line-height: 35px;
+}
+
+.dot{
+	height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    display: inline-block;
+    border: 1px solid #929292;
+    margin: 35px 7px;
+}
+
+.selected{
+	background: #929292;
+}
+
+.part7{
+	height: 520px;
+	
+}
+
+.part7:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.part7_1{
+	width: 425px;
+	height: 520px;
+	float: left;
+	padding-top: 175px;
+	background: #e74f4d;
+	color: #ffffff;
+	text-align: center;
+}
+
+.part7_1 p{
+	font-size: 21px;
+	font-weight: normal;
+	line-height: 30px;
+	margin-bottom: 50px;
+}
+
+.part7_1 p:after{
+	content: "";
+	display: inline-block;
+    height: 2px;
+    width: 30px;
+    background: #ffffff;
+}
+
+.part7_1 button{
+	width: 170px;
+	height: 40px;
+	border: solid 1px #ffffff;
+	background-color: #e74f4d;
+	color: #ffffff;
+	font-size: 21px;
+	line-height: 24px;
+}
+
+.part7_2{
+	width: 425px;
+	height: 520px;
+	float: left;
+	padding-top: 175px;
+	text-align: center;
+}
+
+.part7_2 p{
+	font-size: 21px;
+	font-weight: normal;
+	line-height: 30px;
+	margin-bottom: 50px;
+}
+
+.part7_2 p:after{
+	content: "";
+	display: inline-block;
+    height: 2px;
+    width: 30px;
+    background: #ababab;
+}
+
+.part7_2 button{
+	width: 170px;
+	height: 40px;
+	border: solid 1px #e74f4d;
+	background-color: #ffffff;
+	color: #e74f4d;
+	font-size: 21px;
+	line-height: 24px;
+}
+
+.part7_3{
+	width: 425px;
+	height: 520px;
+	float: left;
+	background: url('./images/part7.png');
+	position: relative;
+
+}
+
+.part7_3 .tri{
+	width: 24px;
+    height: 29px;
+    background: url('./images/part7_1.png') no-repeat;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 260px;
+    overflow: hidden;
+}
+
+.part8{
+	height: 750px;
+	text-align: center;
+}
+
+.part8 h1{
+	padding-top: 120px;
+	font-size: 21px;
+	font-weight: normal;
+}
+
+.part8 h1:after{
+	content: "";
+	display: inline-block;
+    height: 2px;
+    width: 30px;
+    background: #e74f4d;
+}
+
+.part8 h2{
+	font-size: 12px;
+	color: #aaaaaa;
+	font-weight: normal;
+	margin-bottom: 100px;
+}
+
+.lpart8{
+	float: left;
+	width: 290px;
+	height: 280px;
+	margin-left: 135px; 
+	text-align: left;
+}
+
+.lpart8 .wpart8{
+	margin-bottom: 30px;
+}
+
+.wpart8 h3{
+	font-size: 14px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+.wpart8 p{
+	font-size: 12px;
+	color: #aaaaaa;
+}
+
+.wpart8 .more{
+	font-size: 10px;
+	color: #aaaaaa;
+	float: right;
+}
+
+.wpart8 .more:before{
+	content: url('./images/part8_1.png');
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: -15px;
+    margin-right: 5px;
+}
+
+.rpart8{
+	float: left;
+	width: 640px;
+	margin-left: 80px;
+}
+
+.rpart8 input{
+	width: 310px;
+	height: 40px;
+	float: left;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	padding-left: 15px;
+	background: #ececee;
+	border: none;
+	color: #000000;
+	font-size: 12px;
+}
+
+.rpart8 textarea{
+	width: 100%;
+	height: 110px;
+	float: left;
+	background: #ececee;
+	padding-left: 15px;
+	margin-bottom: 20px;
+	border: none;
+	color: #000000;
+	font-size: 12px;
+	line-height: 30px;
+}
+
+.rpart8 button{
+	width: 100%;
+	height: 40px;
+	border: none;
+	font-size: 14px;
+	font-family: "黑体";
+	background: #ececee;
+}
+
+.part9{
+	height: 360px;
+	background: #32353e;
+	color: #ffffff;
+	text-align: center;
+}
+
+.part9 h1{
+	padding-top: 90px;
+	font-size: 21px;
+	line-height: 25px;
+	letter-spacing: 0.2em;
+	font-family: "黑体";
+	font-weight: normal;
+	padding-bottom: 10px;
+}
+
+.part9 h2{
+	font-size: 12px;
+	font-family: "宋体";
+	font-weight: normal;
+	line-height: 20px;
+	margin-bottom: 30px;
+}
+
+.part9 .contact{
+	width: 510px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+.contact input{
+	margin: 0;
+	height: 100%;
+	width: 80%;
+	float: left;
+	border: none;
+}
+
+.contact button{
+	height: 100%;
+	width: 19%;
+	float: left;
+	color: #ffffff;
+	font-size: 15px;
+	border:none;
+	background: #707278;
+}
+
+.part9 .icon{
+	margin-top: 40px;
+}
+
+.icon img{
+	margin-right: 25px;
+}
+
+footer{
+	height: 55px;
+	background: #2f2f38;
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 55px;
+	padding: 0 20px;
+}
+
+footer p{
+	float: left;
+}
+
+footer a{
+	float: right;
+}
+
+
+
 
 
 
