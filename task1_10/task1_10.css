@@ -1,0 +1,41 @@
+.box{
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.flex{
+	border: solid 1px #f00;
+	width: 150px;
+	margin:20px;
+}
+
+.flex:last-of-type{
+	border: solid 1px #0f0;
+	height: 200px;
+}
+
+.box1{
+	height: 120px;
+}
+
+.box2{
+	height: 100px;
+}
+
+.box3{
+	height: 40px;
+}
+
+@media (max-width: 640px) {
+	.flex:last-of-type{
+		order: -1;
+	}
+	.box{
+		flex-wrap: wrap;
+		align-items: flex-start;
+	}
+}
+
+
