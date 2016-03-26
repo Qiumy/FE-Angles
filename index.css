@@ -40,7 +40,7 @@
 	margin-right: 140px;
 	min-width: 200px;
 	padding: 20px;
-	
+	overflow: hidden;
 }
 
 .main li{
@@ -75,6 +75,11 @@ figure{
 	zoom:1;
 }
 
+ul{
+	margin: 0;
+	padding: 0;
+}
+
 li > a {
 	color: #000;
 	text-decoration: none;
@@ -82,4 +87,9 @@ li > a {
 
 li a:hover {
 	color: #66DDFF;
+}
+
+.task{
+	float: left;
+	width: 150px;
 }
