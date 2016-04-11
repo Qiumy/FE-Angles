@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>task2_19</title>
+	<link rel="stylesheet" href="">
+</head>
+<style>
+	#box{
+		margin-top: 10px;
+		height: 400px;
+		width: 90%;
+		border: solid 1px black;
+		display: flex;
+        display: -webkit-flex;
+        flex-wrap: nowrap;
+        justify-content:flex-start;
+        align-items: flex-end;
+	}
+
+	.rect-box{
+		width: 20px;
+		background: #FA8072;
+		margin-right: 8px;
+	}
+
+	.rect-box:hover{
+		background: #567190;
+	}
+</style>
+<body>
+	<input type="text" value="23" id="input">
+	<button id="left-in">左侧入</button>
+	<button id="right-in">右侧入</button>
+	<button id="left-out">左侧出</button>
+	<button id="right-out">右侧出</button>
+	<button id="bubble-sort">冒泡排序</button>
+	<button id="insert-sort">插入排序</button>
+	<button id="quick-sort">快速排序</button>
+	<button id="random-queue">随机生成</button>
+
+	<div id="box"></div>
+	<script src="./task2_19.js"></script>
+</body>
+</html>
