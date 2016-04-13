@@ -32,6 +32,16 @@ document.getElementById("right-in").onclick = function() {
     render();
 }
 
+document.getElementById("left-out").onclick = function(){
+    data.shift();
+    render();
+}
+
+document.getElementById("right-out").onclick = function(){
+    data.pop();
+    render();
+}
+
 function render(match) {
 	document.getElementById("result").innerHTML = data.map(function(d){
 		var r = d;
