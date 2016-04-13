@@ -48,6 +48,10 @@
 	line-height: 2.5em;
 }
 
+.main h1 a{
+	text-decoration: none;
+}
+
 .right{
 	width:120px;
 	background-color: #FFF;
@@ -93,3 +97,4 @@ li a:hover {
 	float: left;
 	width: 450px;
 }
+

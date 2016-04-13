@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>task2_21</title>
+	<link rel="stylesheet" href="">
+</head>
+<style>
+#tag-box div{
+	display: inline-block;
+	font-size: 25px;
+	text-align: center;
+	padding: 0 5px;
+	margin: 10px;
+	height: 40px;
+	line-height: 40px;
+	background: #684879;
+	color:#fff;
+}
+
+#tag-box div:hover{
+	background-color: red;
+	cursor: pointer;
+}
+
+#tag-box div:hover:before{
+	content: "点击删除";
+}
+
+#hobby-box div{
+	display: inline-block;
+	font-size: 25px;
+	text-align: center;
+	padding: 0 5px;
+	margin: 10px;
+	height: 40px;
+	line-height: 40px;
+	background: #176268;
+	color:#fff;
+}
+
+#hobby-box div:hover{
+	background-color: red;
+	cursor: pointer;
+}
+
+#hobby-box div:hover:before{
+	content: "点击删除";
+}
+	
+</style>
+<body>
+	<label for="input-tag">Tag:</label><input type="text" id="input-tag">
+	<div id="tag-box"></div>
+
+	<textarea id="input-hobby"></textarea><br>
+	<button id="add-hobby">确认兴趣爱好</button>
+	<div id="hobby-box"></div>
+	
+</body>
+<script src="./task2_21.js"></script>
+</html>
