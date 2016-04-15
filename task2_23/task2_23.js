@@ -168,11 +168,11 @@ function animation(id,tree){
     }else if(id=='bfs'){
     	data = tree.toArray(tree.traverseBFS);
     	intervalID = setInterval(aniProcess, 300);
-    }else if(id='search-dfs'){
+    }else if(id=='search-dfs'){
     	data = tree.toArray(tree.traverseDFS);
         var keyWord = $('input').value;
         intervalID = setInterval(searchProcess, 300);
-    }else if(id="search-bfs"){
+    }else if(id=="search-bfs"){
     	data = tree.toArray(tree.traverseBFS);
         var keyWord = $('input').value;
         intervalID = setInterval(searchProcess, 300);
