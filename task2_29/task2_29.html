@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>task2_29</title>
+</head>
+<style>
+label{
+	font-family: "微软雅黑";
+	font-size: 20px;	
+}
+
+input{
+	width: 300px;
+	line-height: 20px;
+	font-size: 20px;
+	font-family: "微软雅黑";
+	border-radius: 5px;
+	outline: none;
+	border: solid 2px #aaa;
+}
+
+.right > input{
+	border-color: lightgreen;
+}
+
+.error > input{
+	border-color: red;
+}
+
+button{
+	line-height: 30px;
+	font-size: 20px;
+	font-family: "微软雅黑";
+	background: #286090;
+	color: #ffffff;
+	border:none;
+	border-radius: 5px;
+}
+
+#tips{
+	font-size: 20px;
+	font-family: "微软雅黑";
+	margin-top: 5px;
+	margin-left: 50px;
+	color: #aaa;
+}
+
+.error > #tips{
+	color: red;
+}
+
+.right > #tips{
+	color:lightgreen;
+}
+	
+</style>
+<body>
+	<div id="checkbox">
+		<label>名称</label>
+		<input type="text" id="input-text">
+		<button id="btn">验证</button>
+		<div id="tips">必填，长度为4~16个字符</div>
+	</div>
+</body>
+<script src="./task2_29.js"></script>
+</html>
