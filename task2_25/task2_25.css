@@ -1,0 +1,107 @@
+*{
+	font-family: "Microsoft YaHei UI";
+}
+
+span{
+	margin: 0;
+	padding: 0;
+}
+
+#tree-module{
+	display: block;
+	width: 600px;
+	position: relative;
+	left: 50%;
+	margin-left: -300px;
+}
+
+#search{
+	margin-left: 10px;
+}
+
+#clear{
+	margin-left: 10px;
+}
+
+#result{
+	font-size: 14px;
+	text-align: center;
+	line-height: 16px;
+}
+
+/* 结点部分样式 */
+.node-visible{
+	display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 5px 18px;
+    background-color: #ffffff;
+    user-select:none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.node-hidden{
+	display: none;
+}
+
+.arrow{
+	display: inline-block;
+	margin-right: 7px;
+}
+
+.right-arrow{
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 10px solid #6898c2;
+}
+
+.down-arrow{
+	width: 0;
+	height: 0;
+	border-top: 10px solid #6898c2;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    cursor: pointer;
+}
+
+.empty-arrow{
+	border-left: 10px solid transparent;
+}
+
+.node-title{
+	font-size: 14px;
+	color: #6898c2;
+	line-height: 21px;
+}
+
+.node-title:hover{
+	color: blue;
+	cursor: pointer;
+}
+
+.node-title-highlight{
+	color: red;
+	font-weight: bold;
+}
+
+.addIcon, .deleteIcon{
+	display: none;
+	vertical-align: top;
+}
+
+.addIcon:hover, .deleteIcon:hover{
+	cursor: pointer;
+}
+
+.node-body:hover>.addIcon, .node-body:hover>.deleteIcon{
+	display: inline;
+}
+
+fieldset{
+	float: left;
+}
