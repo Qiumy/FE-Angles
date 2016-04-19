@@ -1,0 +1,67 @@
+* {
+	font-size: 18px;
+	font-family: "微软雅黑";
+}
+
+form {
+	width: 500px;
+}
+
+.formgroup{
+	width: 500px;
+	text-align: right;
+	margin-bottom: 10px;
+}
+
+label{
+	vertical-align: 120%;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.wrapper {
+     display: inline-block;
+     text-align: left;
+}
+
+.tip{
+	display: block;
+	font-size: 0.8em;
+	visibility: hidden;
+	margin-top: 3px;
+}
+
+input{
+	width: 20em;
+	padding: 5px;
+	border: solid 1px;
+	border-radius: 3px;
+}
+
+#submit{
+	display: inline-block;
+	width: 4em;
+	line-height: 1.8em;
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	color: #ffffff;
+	background-color: #3b78ff;
+	float: right;
+}
+
+.error{
+	border-color: red;
+}
+
+.tip .error{
+	color: red;
+}
+
+.correct{
+	border-color: lightgreen;
+}
+
+.tip .correct{
+	color: lightgreen;
+}

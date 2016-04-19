@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>task2_30</title>
+	<link rel="stylesheet" href="./task2_30.css">
+</head>
+<body>
+	<form accept-charset="utf-8" id="myForm">
+		<div class="formgroup">
+			<label for="name">名称</label>
+			<div class="wrapper">
+				<input type="text" name="名称" id="name">
+				<span class="tip">必填，长度为4~16个字符</span>
+			</div>
+		</div>
+		<div class="formgroup">
+			<label for="password">密码</label>
+			<div class="wrapper">
+				<input type="password" name="密码" id="password">
+				<span class="tip">必填，密码长度为8~16个字符，只包含英文和数字</span>
+			</div>
+		</div>
+		<div class="formgroup">
+			<label for="comfirm_password">密码确认</label>
+			<div class="wrapper">
+				<input type="password" name="密码确认" id="comfirm_password">
+				<span class="tip">必填，两次输入相同密码</span>
+			</div>
+		</div>
+		<div class="formgroup">
+			<label for="email">邮箱</label>
+			<div class="wrapper">
+				<input type="text" name="邮箱" id="email">
+				<span class="tip">必填，注意邮箱格式</span>
+			</div>
+		</div>
+		<div class="formgroup">
+			<label for="phone">手机</label>
+			<div class="wrapper">
+				<input type="text" name="手机" id="phone">
+				<span class="tip">必填，请输入11位手机号码</span>
+			</div>
+		</div>
+		<button type="submit" id="submit">提交</button>
+	</form>
+	
+</body>
+<script src="./task2_30.js"></script>
+</html>
