@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>task2_31</title>
+	<link rel="stylesheet" href="./task2_31.css">
+</head>
+<body>
+<div id="show">
+	<div class="input_group">
+		<input type="radio" name="jobs" value="在校生" checked>
+		<label for="jobs">在校生</label>
+		
+		<input type="radio" name="jobs" value="非在校生">
+		<label for="jobs">非在校生</label>
+	</div>
+
+	<div id="show_school">
+		<label>学校</label>
+		<select id="city">
+			<option value="bj">北京</option>
+            <option value="sh">上海</option>
+            <option value="gz">广州</option>
+		</select>
+		<select id="school">
+		</select>		
+	</div>
+	<div id="show_work" class="hidden">
+		<label>就业单位</label>
+		<input type="text">
+	</div>
+</div>
+</body>
+<script src="./task2_31.js"></script>
+</html>

@@ -1,0 +1,64 @@
+* {
+	font-family: "微软雅黑";
+}
+
+#show{
+	width: 600px;
+	margin:100px auto 20px;
+}
+
+.input_group{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+input[type="radio"]{
+	border: solid 1px #999;
+	width: 15px;
+	height: 15px;
+/*	position: relative;
+	top:3px;*/
+	cursor: :pointer;
+	margin-right: 5px;
+}
+
+.input_group label{
+	font-size: 20px;
+	margin-right: 20px;
+}
+
+#show_school{
+	width: 600px;
+	text-align: center;
+}
+
+#show_school select{
+	width: 150px;
+	outline: none;
+	padding: 2px;
+	margin-right: 19px;
+	border: solid 1px #cdcdcd;
+	border-radius: 5px;
+}
+
+#show_work{
+	width: 600px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+#show_work input{
+	width: 200px;
+	outline: none;
+	padding: 5px;
+	border: 1px solid #cdcdcd;
+	border-radius: 5px;
+}
+
+.hidden{
+	display: none;
+}
+
+.show{
+	display: show;
+}
