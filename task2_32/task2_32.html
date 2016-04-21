@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>task2_32</title>
+	<link rel="stylesheet" type="text/css" href="./task2_32.css">
+</head>
+<body>
+	<aside id="form_data_set">
+		<form id="create_form">
+			<fieldset id="type_box">
+				<legend>类型</legend>
+				<input type="radio" name="data_type" id="input" checked>
+				<label for="input">输入框</label>
+				
+				<input type="radio" name="data_type" id="radio">
+				<label for="radio">单选框</label>
+				
+				<input type="radio" name="data_type" id="checkbox">
+				<label for="checkbox">多选框</label>
+				
+				<input type="radio" name="data_type" id="select">
+				<label for="select">下拉框</label>
+				
+				<input type="radio" name="data_type" id="textarea">
+				<label for="textarea">文本域</label>
+			</fieldset>
+
+			<fieldset id="basic_box">
+				<legend>配置</legend>
+				<label for="input_name"> 名称:</label>
+				<input type="text" id="input_name" value="姓名">
+
+				<input type="radio" name="data_need" id="necessary" checked>
+				<label for="necessary">必填</label>
+				
+				<input type="radio" name="data_need" id="unnecessary">
+				<label for="unnecessary">选填</label>
+				
+				<label>样式</label>
+				<select id="select_box">
+					<option value="style1">样式一</option>
+					<option value="style2">样式二</option>}
+				</select>
+			</fieldset>
+
+			<fieldset id="rule_box">
+				<legend>规则</legend>
+				<input type="radio" name="data_rule" id="text" checked>
+				<label for="text">文字</label>
+				
+				<input type="radio" name="data_rule" id="number">
+				<label for="number">数字</label>
+				
+				<input type="radio" name="data_rule" id="email">
+				<label for="email">邮箱</label>
+				
+				<input type="radio" name="data_rule" id="phone">
+				<label for="phone">手机</label>
+				
+				<input type="radio" name="data_rule" id="password">
+				<label for="password">密码</label>
+			</fieldset>
+
+			<fieldset id="item_box">
+				<legend>选项</legend>
+				<input id="item_box_input" placeholder="可用空格，逗号，回车来分隔选项" />
+            	<span id="box_item_show"></span>
+			</fieldset>
+
+			<fieldset id="length_control">
+				<legend>长度限制</legend>
+				<label>字符范围：</label>
+				<input id="min_length" type="number" min="0" value="4">
+            	<span>--</span>
+            	<input id="max_length" type="number" min="1" value="16">
+			</fieldset>
+
+			 <button id="btn_add" type="submit">add</button>
+		</form>
+	</aside>
+
+	<div id="form_box">
+		<h1 id="title">表单展示区</h1>	
+		<form id="result">	
+			<button type="submit" id="submit_form">提交</button>
+		</form>
+	</div>	
+</body>
+</html>

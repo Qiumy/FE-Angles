@@ -1,0 +1,75 @@
+/*
+* 设置表单样式
+*/
+#form_data_set{
+	width: 320px;
+	float: left;
+}
+
+#form_data_set fieldset{
+	margin-top: 20px;
+}
+
+#form_data_set label{
+	display: inline-block;
+	margin-top: 7px;
+	font-size: 14px;
+	margin-right: 4px;
+}
+
+#form_data_set #input_name{
+	width: 220px;
+}
+
+#length_control input{
+	width: 20%;
+}
+
+#btn_add {
+    margin-top: 20px;
+    width: 80px;
+    height: 30px;
+    background-color: #567890;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/*
+* 展示表单样式
+*/
+#form_box {
+    margin: 0 40px 0 340px ;
+    min-width: 600px;
+    padding: 0 0 20px 0;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+#title {
+    text-align: center;
+    color: #567890;
+}
+
+#result {
+    width: 400px;
+    margin: 20px auto;
+    position: relative;
+}
+
+#result :first-child[id=submit_form] {
+    display: none;
+}
+
+#submit_form {
+    margin-top: 20px;
+    width: 80px;
+    height: 30px;
+    background-color: #567890;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    outline: none;
+}
