@@ -1,20 +1,82 @@
-canvas {
-	display: block;
-	margin: 20px auto;
+* {
+	font-family: "微软雅黑";
+}
+
+#selectbox{
+	box-shadow: 
+	padding: 40px;
+	width: 500px;
+	height: 200px;
+	margin: 200px auto;
+	background: #fecdab;
+	text-align: center;
 	box-shadow: -2px -2px 2px #EFEFEF, 5px 5px 5px #B9B9B9;
 }
 
-.btnbox {
-	width: 450px;
-	margin: 20px auto; 
-	text-align: center;
+#selectbox table{
+	margin: 20px auto;
 }
 
-.btnbox button{
+#selectbox tr{
+	line-height: 40px;
+}
+
+#selectbox label{
+	margin-right: 20px;
+}
+
+#selectbox button{
 	border: none;
 	width: 80px;
 	height: 30px;
 	margin: 0 5px;
 	background: #EFEFEF;
 	box-shadow: -2px -2px 2px #EFEFEF, 1px 1px 1px #B9B9B9;
+}
+
+.hidden{
+	display: none;
+}
+
+.show{
+	display: block;
+}
+
+#play_screen{
+	text-align: center;
+}
+
+#rePlay {
+	margin-top: 90px;
+	margin-right: 30px;
+	border: none;
+	line-height: 25px;
+	background: #EFEFEF;
+	box-shadow: -2px -2px 2px #EFEFEF, 1px 1px 1px #B9B9B9;
+}
+
+.blackColor{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: #000;
+	border-radius: 15px;
+	line-height: 25px;
+	box-shadow: -2px -2px 2px #EFEFEF, 1px 1px 1px #B9B9B9;
+}
+
+.whiteColor{
+	/*border: 1px solid #000;*/
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: #FFF;
+	border-radius: 15px;
+	line-height: 25px;
+	box-shadow: -2px -2px 2px #EFEFEF, 1px 1px 1px #B9B9B9;
+}
+canvas {
+	display: block;
+	margin: 20px auto;
+	box-shadow: -2px -2px 2px #EFEFEF, 5px 5px 5px #B9B9B9;
 }
