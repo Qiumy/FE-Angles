@@ -162,7 +162,6 @@ var oneStep = function(i, j, black){
 
 // 玩家下子
 chessbox.onclick = function(e) {
-	console.log(me);
 	if(over || !me){
 		return;
 	}
@@ -266,7 +265,9 @@ var computerAI = function(){
 			computerWin[k]++;
 			myWin[k] = 6;
 			if(computerWin[k]==5){
-				window.alert("you lose!");
+				drawWinLine(k);
+				// window.alert("you lose!");
+				document.getElementById("showText").innerHTML="You Lose!";
 				over = true;
 			}
 		}
@@ -274,6 +275,35 @@ var computerAI = function(){
 	if(!over){
 		me = !me;
 	}
+}
+
+var drawWinLine = function(cnt){
+	winPosX=[]
+	winPosY=[]
+	for(var i=0; i<boxSize; i++){
+		for(var j=0; j<boxSize; j++){
+			if(wins[i][j][cnt]){
+				winPosX.push(i);
+				winPosY.push(j);
+			}
+		}
+	}
+	console.log(winPosX);
+	console.log(winPosY);
+	context.strokeStyle="#F00";
+	context.beginPath();
+	if(winPosX[0]==winPosX[1]){
+		context.moveTo(winPosX[0]*30+15,winPosY[4]*30+15);
+		context.lineTo(winPosX[0]*30+15,winPosY[0]*30+15);
+	}else if(winPosY[0]==winPosY[1]){
+		context.moveTo(winPosX[0]*30+15,winPosY[0]*30+15);
+		context.lineTo(winPosX[4]*30+15,winPosY[0]*30+15);
+	}else{
+		context.moveTo(winPosX[0]*30+15,winPosY[0]*30+15);
+		context.lineTo(winPosX[4]*30+15,winPosY[4]*30+15);
+	}
+	context.stroke();
+	context.closePath();
 }
 
 

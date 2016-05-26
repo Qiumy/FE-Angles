@@ -75,6 +75,13 @@
 	line-height: 25px;
 	box-shadow: -2px -2px 2px #EFEFEF, 1px 1px 1px #B9B9B9;
 }
+
+#showText{
+	margin-top: 20px;
+	color: red;
+	font-weight: bold;
+	line-height: 30px;
+}
 canvas {
 	display: block;
 	margin: 20px auto;
