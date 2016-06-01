@@ -10,6 +10,7 @@ beginBtn.onclick = function(){
 	getSelectValue();
 	selectbox.className="hidden";
 	play_screen.className="show";
+
 	drawChessBoard(boxSize);
 	initWinsWay(boxSize);
 
