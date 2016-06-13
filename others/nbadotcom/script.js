@@ -11,17 +11,47 @@ NAMES = {
 };
 
 function parseXML() {
-    if (window.XMLHttpRequest) {
-        // code for IE7+, Firefox, Chrome, Opera, Safari
-        xmlhttp = new XMLHttpRequest();
-    }
-    else {
-        // code for IE6, IE5
-        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-    }
-    xmlhttp.open("GET", "index.xml", false);
-    xmlhttp.send();
-    xmlDoc = xmlhttp.responseXML;
+    //if (window.XMLHttpRequest) {
+    //    // code for IE7+, Firefox, Chrome, Opera, Safari
+    //    xmlhttp = new XMLHttpRequest();
+    //}
+    //else {
+    //    // code for IE6, IE5
+    //    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    //}
+    //xmlhttp.open("GET", "index.xml", false);
+    //xmlhttp.send();
+    //xmlDoc = xmlhttp.responseXML;
+
+    //text = "<playoff><games teams=\"GSW-HOU\">" +
+    //    "<game>" +
+    //    "<home name=\"GSW\">104</home>" +
+    //    "<away name=\"HOU\">78</away>" +
+    //    "<date>0417</date>" +
+    //    "</game>" +
+    //    "<game>" +
+    //    "<home name=\"GSW\">115</home>" +
+    //    "<away name=\"HOU\">106</away>" +
+    //    "<date>0419</date>" +
+    //    "</game>" +
+    //    "</games>" +
+    //    "<games teams=\"LAC-POR\">" +
+    //    "<game>" +
+    //    "<home name=\"LAC\">104</home>" +
+    //    "<away name=\"POR\">78</away>" +
+    //    "<date>0417</date>" +
+    //    "</game>" +
+    //    "<game>" +
+    //    "<home name=\"LAC\">115</home>" +
+    //    "<away name=\"POR\">106</away>" +
+    //    "<date>0419</date>" +
+    //    "</game>" +
+    //    "</games></playoff>";
+
+    parser = new DOMParser();
+    xmlDoc = parser.parseFromString(getData(), "text/xml");
+    console.log(xmlDoc);
+
     var games = xmlDoc.getElementsByTagName("games");
     for (var i = 0; i < games.length; i++) {
         var game = games[i].getElementsByTagName("game");
@@ -95,6 +125,7 @@ function showScoreBox() {
         //console.log(team1);
         //console.log(team2);
         scoreBox.innerHTML = getScoreBoxInnerHtml(team1, team2);
+        //scoreBox.innerHTML = getScoreBoxInnerHtml("GSW", "HOU");
         //scoreBox.style.width="200px";
         //scoreBox.style.background="#f00"
         scoreBox.className = "scoreBox";
@@ -105,15 +136,15 @@ function showScoreBox() {
         var top = document.defaultView.getComputedStyle(gamesObj, null)["top"];
 
         scoreBox.style.position = "absolute";
-        if(parseInt(left.substring(0, left.indexOf("px")))>500){
+        if (parseInt(left.substring(0, left.indexOf("px"))) > 500) {
             var selfWidth = document.defaultView.getComputedStyle(scoreBox, null)["width"];
             scoreBox.style.right = 900 - parseInt(left.substring(0, left.indexOf("px"))) + 5 + "px";
-        }else{
+        } else {
             scoreBox.style.left = parseInt(left.substring(0, left.indexOf("px"))) + 135 + "px";
         }
         //scoreBox.style.left = parseInt(left.substring(0, left.indexOf("px"))) + 135 + "px";
         scoreBox.style.top = top;
-        scoreBox.style.display="none";
+        scoreBox.style.display = "none";
         playoffObj.appendChild(scoreBox);
         team1 < team2 ? scoreBoxes[team1 + "-" + team2] = scoreBox : scoreBoxes[team2 + "-" + team1] = scoreBox;
         //scoreBoxes.push(scoreBox);
@@ -163,6 +194,9 @@ function addEvent() {
 
 parseXML();
 addEvent();
+
+
+
 
 
 
